@@ -1,12 +1,415 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">  
+
+         <title>trawel</title>
 </head>
 <body>
-    <h1>salom</h1>
+<header class="flex justify-around pt-[56px]" data-aos="fade-down">
+<div>
+<img src="./images/logo.svg" alt="">
+</div>
+<ul class="flex gap-[20px] items-center font[Inter] font-normal text-[#B8BECD]">
+<li><a class="hover:text-black" href="#">Home</a></li>
+ <li><a class="hover:text-black" href="#">Destinations</a></li>
+<li><a class="hover:text-black" href="#">About</a></li>
+<li><a class="hover:text-black" href="#">Partner</a></li>
+<li>
+<button 
+type="button" class="text-[#FB8F1D] w-[132px] hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] focus:ring-4 focus:outline-none focus:ring-[#FB8F1D] font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">
+Login</button>
+</li>
+<li>
+<button 
+type="button" class="text-[#FB8F1D] w-[132px] hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] focus:ring-4 focus:outline-none focus:ring-[#FB8F1D] font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">
+Register
+</button>
+</li>
+</ul>
+</header>
+<main>
+<section 
+ style="
+ height: 89vh;
+margin-top: 72px;"
+
+style="font-family: Playfair Display ;"
+class=" font-bold text-[64px] text-[#202336] pl-[189px]" data-aos="zoom-in-up">
+Explore and <br>
+Travel
+</h1> 
+<p class="font-[inter]  font-semibold text-[22px]  pl-[8px] pt-[74px]">Holiday  finder</p>
+<div class="bg-[#202336] w-[32px] h-[2px] ml-[9px] mt-[11px]">
+</div>
+<div class="ml-[9px] mt-[28px] flex gap-[30px]">
+<form class="w-[220px] ">
+<select id="countries" class="bg-gray-50 border border-gray-300 text-[#4A4C53] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+<option value="DE">Location</option>
+<option value="US">Uzbekistan</option>
+<option value="CA">Canada</option>
+<option value="FR">France</option>
+<option value="DE">Germany</option>
+</select>
+</form>
+<form class="w-[220px]">
+<select id="countries" class="bg-gray-50 border border-gray-300 text-[#4A4C53] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+<option value="DE">Activity</option>
+<option value="US">United States</option>
+<option value="CA">Canada</option>
+<option value="FR">France</option>
+<option value="DE">Germany</option>
+</select>
+</form>
+<form class="w-[220px] ml-[-500px] mt-[88px] flex gap-[30px]" >
+<select id="countries" class="bg-gray-50 border border-gray-300 text-[#4A4C53] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+<option value="DE">Grade</option>
+<option value="US">5</option>
+<option value="CA">4</option>
+<option value="FR">3</option>
+<option value="DE">2</option>
+</select>
+</form>
+<form class="w-[220px] ml-[-1px] mt-[88px] gap-[30px]" >
+<select id="countries" class="bg-gray-50 border border-gray-300 text-[#4A4C53] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+<option value="DE">Date</option>
+<option value="US">2024</option>
+<option value="CA">2023</option>
+<option value="FR">2022</option>
+<option value="DE">2021</option>
+</select>
+</form>
+</div>
+<button 
+type="button" class="text-[#FB8F1D] hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] w-[180px] focus:ring-4 focus:outline-none ml-[19px] mt-[47px] focus:ring-[#FB8F1D] font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900" \>
+Explore
+
+</button>
+<div class="mt-[-500px] ml-[600px]" >
+  <img src="./images/sayoxatt.png" alt="">
+</div>
+</section>
+</main>
+<section>
+<section>
+<div class="data-aos=flip-up">
+<div class="mt-[286px] ml-[145px]" data-aos="zoom-in-up">
+<img src="./images/sayoxat.svg" alt="">
+</div>
+<p
+style="font-family: Playfair Display ;"
+class=" font-bold text-[36px] text-[#202336] pl-[902px] mt-[-420px]"  data-aos="zoom-in-up">
+A new way to explore the <br> world  
+</p> 
+<p
+style="font-family:mulish ;"
+class=" text-[17px] text-[#202336] pl-[902px] mt-[20px]"data-aos="zoom-in-up" >
+For decades travellers have reached for Lonely Planet <br> books when looking
+ to plan and execute their perfect <br>
+trip, but now, they can also let Lonely Planet Experiences <br> lead the way
+</p> 
+<button 
+type="button" class="text-[#FB8F1D] hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] w-[180px] focus:ring-4 focus:outline-none ml-[900px] mt-[47px] focus:ring-[#FB8F1D] font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900" data-aos="zoom-in-up" >
+Learn more
+</button>
+</div>
+</section>
+<section>
+<div>
+<div class="mt-[286px] ml-[145px]" >
+<img src="./images/dumaloq-1.svg" alt="">
+</div>
+<p
+style="font-family: Playfair Display ;"
+class=" font-bold text-[36px] text-[#202336] pl-[252px] mt-[-420px]" data-aos="zoom-in-up">
+Featured destinations
+</p> 
+<p
+style="font-family:Inter ;"
+class="  text-[17px] text-[#FB8F1D] pl-[1281px] mt-[-35px]">
+View all
+>
+</p> 
+<section style="background-image: url(./images/sayohat-1svg.svg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 100vh;
+width: 260px;
+height: 332px;
+margin-top: 72px;"
+class="h-auto max-w-lg rounded-lg ml-[240px]" data-aos="zoom-in-up">
+<p class="pt-[287px] font-bold">Raja Ampat </p>
+<p class="text-[#80918E] font-[Inter]">Indonesia</p>
+</section>
+</div>
+</section>
+<section class="mt-[-403px]" data-aos="zoom-in-up">
+<section  style="background-image: url(./images/tog\'.svg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 100vh;
+width: 260px;
+height: 332px;
+ margin-top: 72px;"
+  class="ml-[526px] mt-[7840px]" >
+  <p class="pt-[287px] font-bold">Fanjingshan</p>
+  <p class="text-[#80918E] font-[Inter]">China</p>
+  </div>
+  </section>
+  </section>
+  <section class="mt-[-403px] ml-[290px]" data-aos="zoom-in-up">
+  <section  style="background-image: url(./images/mahalla.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  width: 260px;
+  height: 332px;
+  margin-top: 72px; "
+  class="ml-[526px] mt-[7840px]">
+  <p class="pt-[287px] font-bold">Vevey</p>
+  <p class="text-[#80918E] font-[Inter]">Switzerland</p>
+  </div>
+  </section>
+  </section>
+  <section class="mt-[-403px] ml-[580px]" data-aos="zoom-in-up">
+  <section  style="background-image: url(./images/amudaryo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  width: 260px;
+  height: 332px;
+  margin-top: 72px; "
+  class="ml-[526px] mt-[7840px]"data-aos="zoom-in-up" >
+  <p class="pt-[287px] font-bold">Skadar</p>
+  <p class="text-[#80918E] font-[Inter]">Montenegro</p>
+  </div>
+  </section>
+  </section>
+  <section>
+  <div>
+  <div class="ml-[285px] mt-[175px]" data-aos="zoom-in-up" >
+  <img src="./images/tarmoq-1.svg" alt="">
+  </div>
+  <div class="mt-[-380px] ml-[240px] text-[36px] font-[Playfair Display] ">
+  <p
+   style="font-family: Playfair Display ;"
+  class=" font-bold text-[36px] text-[#202336]  mt-[-400px]" data-aos="zoom-in-up">
+  Guides by Thousand <br>
+  Sunny 
+  </p> 
+   <p
+  style="font-family:Inter ;"
+   class="  text-[17px]  mt-[35px]" data-aos="zoom-in-up">
+  Packed with tips and advice from our on-the-ground <br> experts, our city guides 
+  app (iOS and Android) is the <br> ultimate resource before and during a trip.
+  </p>
+  <button 
+   type="button" class="text-[#FB8F1D] hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] w-[180px] focus:ring-4 focus:outline-none  mt-[33px] focus:ring-[#FB8F1D] font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900" data-aos="zoom-in-up">
+  Download
+  </button> 
+  </div>
+  </div>
+  </section>
+  </section>
+  <section class="mt-[400px]" >
+  <div>
+  <div class="mt-[248px] ml-[240px] text-[36px] pb-[145px]">
+  <p class="font-[Inter]"></p>
+  <p
+   style="font-family: Playfair Display  ; "
+   class=" font-bold"data-aos="zoom-in-up" >
+  Testimonials
+  </p> 
+  </div>
+  <div class="ml-[244px] mt-[-40px]" >
+<div class="images" data-aos="zoom-in-up">
+  <img src="./images/star.svg" alt="">
+</div>
+  <p class="pt-[35px] text-[24px]"  data-aos="zoom-in-up">“Quisque in lacus a urna fermentum <br> euismod. 
+  Integer mi nibh, dapibus ac <br> scelerisque eu, facilisis
+  quis purus. Morbi <br> blandit sit amet turpis nec”</p>
+  <p class="pt-[50px] text-[40px]"  data-aos="zoom-in-up">Edward Newgate</p>
+  <p class="pt-[5px] text-[18px]"  data-aos="zoom-in-up">Founder Circle</p>
+  </div>
+  <div class="ml-[860px] mt-[-500px]" data-aos="zoom-in-up">
+  <img src="./images/photo.svg" alt="">
+  </div>
+  </div>
+  </section>
+<div class="mt-[10px]" data-aos="zoom-in">
+  <section>
+    <div>
+    <div class="mt-[448px] ml-[240px] text-[36px] pb-[145px]">
+    <p class="font-[Inter]"></p>
+    <p
+    style="font-family: Playfair Display  ; "
+    class=" font-bold"data-aos="zoom-in-up" >
+      Trending stories 
+    </p> 
+    </div>
+    </div>
+  
+      <div class="mt-[-250px] ml-[644px]" >
+        <img src="./images/element.svg" alt="">
+        </div>
+        <div class="ml-[240px] mt-[156px] " >
+        <img src="./images/qiz.svg" alt="">
+        </div>
+        <div class="ml-[526px] mt-[-332px] ">
+        <img src="./images/ovqat.svg" alt="">
+        </div>
+        <div class="ml-[816px] mt-[-332px] " >
+        <img src="./images/Mask Group (8).svg" alt="">
+        </div>
+        <div class="ml-[1106px] mt-[-332px] " >
+        <img src="./images/ocean.svg" alt="">
+        </div>
+   
+    <p
+    style="font-family:Inter ;"
+    class="  text-[17px] text-[#FB8F1D] pl-[1281px] mt-[-435px]">
+    View all
+    >
+  </p>
+  <div class="mt-[342px] ml-[143px]">
+  <img src="./images/element3.svg" alt="">
+  </div>
+  <div>
+  <div class="text-[20px] font-bold ml-[240px]" >
+  <p>The many benefits of <br>  
+  taking a healing holiday</p>
+  </div>
+  <div class="text-[15px] text-[#7D7987] mt-[15px]  ml-[240px]" >
+  <p>‘Helaing holidays’ are on the rise <br>
+   tohelp maximise your health and <br> happines...</p>
+  </div>
+  <div class="text-[15px] text-[#FB8F1D] ml-[240px] mt-[25px]" >
+  <p>Read more</p>
+  </div>
+  </div>
+  <div class="mt-[362px] ml-[883px]"> 
+  </div>
+  <div class="ml-[286px] mt-[-553px]">
+  <div class="text-[20px] font-bold ml-[240px]" >
+  <p>The best Kyoto restaurant <br>
+   to try Japanese food</p>
+  </div>
+  <div class="text-[15px] text-[#7D7987] mt-[15px]  ml-[240px]" >
+  <p>From tofu to teahouses, here’s our <br> guide to Kyoto’s best restaurants <br>
+   to visit...</p>
+  </div>
+  <div class="text-[15px] text-[#FB8F1D] ml-[240px] mt-[25px]" >
+  <p>Read more</p>
+  </div>
+  </div>
+  <div class="ml-[586px] mt-[-188px]">
+  <div class="text-[20px] font-bold ml-[240px]" >
+  <p>Skip Chichen Itza and head <br>
+  to this remote Yucatan</p>
+  </div>
+  <div class="text-[15px] text-[#7D7987] mt-[15px]  ml-[240px]" >
+  <p>It’s remote and challenging to get, <br>
+  but braving the jungle and exploring <br>
+  these ruins without the...</p>
+  </div>
+  <div class="text-[15px] text-[#FB8F1D] ml-[240px] mt-[25px]" >
+  <p>Read more</p>
+  </div>
+  </div>
+  <div class="ml-[866px] mt-[-188px]">
+  <div class="text-[20px] font-bold ml-[240px]" >
+  <p>Surf’s up at these beginner <br>
+  spots around the world</p>
+  </div>
+  <div class="text-[15px] text-[#7D7987] mt-[15px]  ml-[240px]" >
+  <p>If learning to surf has in on your to- <br>
+  do list for a while, the good news <br>
+  is: it’s never too late...</p>
+  </div>
+  <div class="text-[15px] text-[#FB8F1D] ml-[240px] mt-[25px]" 
+  <p>Read more</p>
+  </div>
+  </div>
+  </section>
+</div>
+<main>
+  <footer>
+    <section class="bg-[#F9F9FB] mt-[200px]"data-aos="zoom-in">
+      <div class="flex justify-center">
+      <div class="pt-[195px]">
+      <div class="pb-[26px]" ><img src="./images/logo.svg" alt=""></div>
+      <p class="text-[Muli] text-[#848484]">Plan and book your perfect trip with <br> expert advice, travel tips destination <br> information from us</p>
+      <p class="pt-[55px] pb-[81px] text-[Muli] text-[#848484]" >©2020 Thousand Sunny. All rights reserved</p>
+      </div>
+      <div class=" pt-[190px] ml-[108px]">
+      <p class="text-[Muli] text-[#000000] font-bold text-[19px] pb-[20px]" >Destinations</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]" >Africa</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]" >Antarctica</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]" >Asia</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]" >Europe</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px]" >America</p>
+      </div>
+      <div class=" pt-[190px] ml-[108px]">
+      <p class="text-[Muli] text-[#000000] font-bold text-[19px] pb-[20px]" >Shop</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]" >Destination Guides</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]" >Pictorial & Gifts</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]" >Special Offers</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]" >Delivery Times</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px]" >FAQs</p>
+      </div>
+      <div class=" pt-[190px] ml-[108px]">
+      <p class="text-[Muli] text-[#000000] font-bold text-[19px] pb-[20px]" d>Interests</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]" >Adventure Travel</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]" >Art And Culture</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]" >Wildlife And Nature</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px] pb-[10px]" >Family Holidays</p>
+      <p class="text-[Muli] text-[#848484] font-light text-[18px]" >Food And Drink</p>
+      </div>
+      </div>
+      <hr class="w-[1019px] ml-[391px]" >
+      <div class="flex pt-[30px] justify-center gap-[35px] pb-[32px]" >
+      <div>
+      <img src="./images/twitter.svg" alt=""> 
+      </div>
+      <div>
+      <img src="./images/feacebook.svg" alt=""> 
+      </div>
+      <div>
+      <img src="./images/instagram.svg" alt=""> 
+      </div>
+      <div>
+      <img src="./images/in.svg" alt=""></div>
+      <div>
+      <img src="./images/yutube.svg" alt="">
+      </div>
+      </div>
+      </section>
+  </footer>
+</main>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
