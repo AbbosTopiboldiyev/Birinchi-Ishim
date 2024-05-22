@@ -123,7 +123,7 @@ nav {
 .box-shadow {
     padding: 20px;
     margin-top: 40px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
 }
 
 .muz {
@@ -138,71 +138,74 @@ nav {
 }
 
 .divan {
-    margin-left: 250px;
+    margin-left: 100px;
 }
 
 .c {
     font-family: roboto;
     color: #414141;
     margin-top: -20px;
-    margin-left: 400px;
+    margin-left: 240px;
 }
 
 .game {
-    margin-left: 250px;
+    margin-left: 120px;
 }
 
 .g {
     font-family: roboto;
     color: #414141;
     margin-top: -20px;
-    margin-left: 680px;
+    margin-left: 395px;
 }
 
 .shkaf {
-    margin-left: 230px;
+    margin-left: 130px;
 }
 
 .p {
     font-family: roboto;
     color: #414141;
     margin-top: -20px;
-    margin-left: 935px;
+    margin-left: 545px;
 }
 
 .stol {
-    margin-left: 200px;
+    margin-left: 120px;
 }
 
 .o {
     font-family: roboto;
     color: #414141;
     margin-top: -20px;
-    margin-left: 1155px;
+    margin-left: 695px;
 }
 
 .dush {
-    margin-left: 250px;
+    margin-left: 170px;
 }
 
 .d {
     font-family: roboto;
     color: #414141;
     margin-top: -20px;
-    margin-left: 1435px;
+    margin-left: 895px;
 }
 
 .a {
     font-family: roboto;
     color: #ff0000;
     margin-top: -20px;
-    margin-left: 1605px;
+    margin-left: 1005px;
 }
 
 .nuqta {
-    margin-left: 330px;
+    margin-left: 230px;
 }
 
+.inmp{
+    margin-left: 320px;
+}
 @media (max-width:1440px) {
     .a {
         display: none;
@@ -282,6 +285,12 @@ nav {
 
     .stol {
         margin-left: 160px;
+    }
+}
+
+@media (max-width:1440px) {
+    .inmp{
+margin: 0 auto;
     }
 }
 
@@ -559,3 +568,171 @@ nav {
 .balkon {
     background-image: url(./);
 }
+
+.search-responsive{
+    display: none;
+padding-top: 20px;
+padding-bottom: 20px;
+    position: relative;
+input {
+    padding-right: 249px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 50px;
+    border: 1px solid #E6E6E6;
+    display: flex;
+    margin: 0 auto;
+}
+.btn input[type="search"]::placeholder {
+    color: black;
+    font-family: "Roboto";
+}
+}
+
+@media (max-width:1250px) {
+    .header input {
+        padding-right: 500px;
+    }
+}
+
+@media (max-width:990px) {
+    .header input {
+        padding-right: 250px;
+    }
+}
+@media (max-width:768px) {
+    .header input {
+        padding-right: 200px;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+.section {
+    margin-top: 20px;
+    padding-top: 23px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.box {
+    display: flex;
+    gap: 10px;
+}
+
+.yes {
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.yesi {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.ak {
+    color: #D74444;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+}
+@media (max-width:850px) {
+    .box-6 , .ak{
+    display: none;
+    } 
+}
+
+.section p{
+cursor: pointer;
+}
+
+.menu-responsive-700px{
+    display: none;
+    padding-top: 15px;
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+div{
+display: flex;
+justify-content: center;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+padding: 14px;
+border-radius: 3px;
+margin-bottom: 10px;
+}
+a{
+font-family: Roboto;
+color: #414141;
+}
+}
+@media (max-width:700px) {
+   
+    .menu-responsive-700px{
+    display: block;
+    }
+  
+    .search-responsive{
+    display: block;
+    }
+}
+.responsive{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+
+}
+@media (max-width:500px) {
+  .aksiya{
+display: none;
+}  
+.search-responsive input{
+padding-right: 150px;
+}
+}
+@media (max-width:375px) {
+    .search-responsive input{
+        padding-right: 100px;
+        }
+}
+.header{
+    margin-top: -40px;
+
+}
+
+.header {
+    padding-top: 37px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .btn {
+        position: relative;
+
+        i {
+            left: 12px;
+            position: absolute;
+            top: 20px;
+        }
+    }
+
+    input {
+        padding-right: 749px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 50px;
+        border: 1px solid #E6E6E6;
+    }
+
+    .btn input[type="search"]::placeholder {
+        color: black;
+        font-family: "Roboto";
+    }
+}
+
