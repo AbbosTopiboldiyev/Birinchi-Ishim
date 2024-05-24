@@ -736,3 +736,16 @@ padding-right: 150px;
     }
 }
 
+@media (max-width:315px) {
+    .game{
+        display: none;
+    }
+
+    input {
+    display: none;
+ 
+    }
+    .search-resp{
+        display: none;
+    }
+}

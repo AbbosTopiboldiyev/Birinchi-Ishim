@@ -112,3 +112,29 @@ footer {
     font-family: roboto;
     color: #414141;
 }
+
+@media (max-width:1385px) {
+    
+.lamas{
+margin-left: -400px;
+}
+
+}
+
+@media (max-width:990px) {
+    
+    .lamas{
+    margin-left: -500px;
+    }
+    .footer-res{
+        margin-left: -100px;
+        gap: 20px;
+    }
+    
+    }
+
+    @media (max-width:770px) {
+    footer {
+        display: none;
+    }
+        }
